@@ -4,7 +4,33 @@ Laravel and PHP versions used:
 
 Laravel v9.26.1 (PHP v8.1.8)
 
-#### Circle Route
+## Major Directories of focus
+
+### Routes
+
+```http
+/routes/web.php
+```
+
+### Views
+
+```http
+/resources/views/welcome.blade.php
+```
+
+### Test
+
+```http
+/tests/Unit/GeoTest.php
+```
+
+### App Logic, Models and Controllers
+
+```http
+/app
+```
+
+## Circle Route
 
 ```http
   GET /circle/2
@@ -19,7 +45,7 @@ Laravel v9.26.1 (PHP v8.1.8)
 }
 ```
 
-#### Triangle Route
+## Triangle Route
 
 ```http
   GET /triangle/3/4/5
@@ -80,7 +106,7 @@ From here, you can easily navigate around without having to use test tools
 
 ![API Navigation Screenshot](https://i.ibb.co/9vb6hVN/Screenshot-2022-09-30-at-10-33-53-AM.png)
 
-### Solution 2
+# Solution 2
 
 Microservices communicate with each other by inter-service communication on network level
 
@@ -90,4 +116,4 @@ The difference between the two is that, <code>Syn</code> wait until the it gets 
 
 On the other hand, <code>Async</code> is NON-blocking communication and it uses Advanced Message Queuing Protocol (AMQP).
 
-My approach to implementing Microservice communication is using RabbitMQ queue
+My approach to implementing Microservice communication is using <code>RabbitMQ queue</code>
