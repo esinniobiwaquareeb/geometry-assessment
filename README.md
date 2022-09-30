@@ -1,16 +1,10 @@
-# ICE and FIRE API
-
-The api url is: https://anapioficeandfire.com/Documentation#books
+# Geometry Assessment
 
 Laravel and PHP versions used:
 
 Laravel v9.26.1 (PHP v8.1.8)
 
-Database used: sqlite
-
-## API Reference
-
-#### Get books
+#### Circle Route
 
 ```http
   GET /circle/2
@@ -25,10 +19,10 @@ Database used: sqlite
 }
 ```
 
-#### Get a single external books
+#### Triangle Route
 
 ```http
-  GET /api/external-books/{id}
+  GET /triangle/3/4/5
 ```
 
 ```
@@ -82,9 +76,9 @@ To run tests, run the following command
 
 ## API Navigations Screenshots
 
-From here, you can easily navigate around the api without having to use test tools
+From here, you can easily navigate around without having to use test tools
 
-![API Navigation Screenshot](https://i.ibb.co/NtzRpjx/Screenshot-2022-08-30-at-5-04-02-PM.png)
+![API Navigation Screenshot](https://i.ibb.co/9vb6hVN/Screenshot-2022-09-30-at-10-33-53-AM.png)
 
 ### Solution 2
 
@@ -92,8 +86,8 @@ Microservices communicate with each other by inter-service communication on netw
 
 Microservice communication can be Sync or Async Communication
 
-The difference between the two is that, Syn wait until the it gets response due to the fact that it uses HTTP communication protocol. In this case, it is advised to use RESTful protocol
+The difference between the two is that, <code>Syn</code> wait until the it gets response due to the fact that it uses HTTP communication protocol. In this case, it is advised to use RESTful protocol
 
-On the other hand, Async is NON-blocking communication and it uses Advanced Message Queuing Protocol (AMQP).
+On the other hand, <code>Async</code> is NON-blocking communication and it uses Advanced Message Queuing Protocol (AMQP).
 
 My approach to implementing Microservice communication is using RabbitMQ queue
