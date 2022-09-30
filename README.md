@@ -96,11 +96,11 @@ To run tests, run the following command
   php artisan test
 ```
 
-## Test Screenshots
+## Test Result Screenshots
 
 ![Test Screenshot](https://i.ibb.co/QDkY8FK/Screenshot-2022-09-30-at-10-26-29-AM.png)
 
-## API Navigations Screenshots
+## Route Navigation Screenshots
 
 From here, you can easily navigate around without having to use test tools
 
